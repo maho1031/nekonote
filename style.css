@@ -1,0 +1,919 @@
+body{
+	margin: 0;
+	padding: 0;
+	color: #444;
+	line-height: 150%;
+}
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+	padding: 0;
+}
+/*=============================
+ リンク
+==============================*/
+a,
+a:active,
+a:focus{
+	color: #F2F2F0;
+}
+a:hover{
+	text-decoration:none;
+}
+/*==============================
+ ヘッダー
+===============================*/
+header {
+	width: 100%;
+	height: 80px;
+	margin-bottom: 80px;
+	background: #F2B66D;
+}
+header h1{
+	float: left;
+	margin: 0;
+	margin-left: 80px;
+	padding-left: 15px;
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Roboto', sans-serif;
+	/*font-family: "M PLUS 1p";*/
+	/*font-family: "Noto Sans JP";*/
+	line-height: 80px;
+}
+header h1 a{
+	color: #F2F2F0;
+	text-decoration: none;
+}
+/*==============================
+ ナビゲーション
+===============================*/
+#top-nav{
+	position: relative;
+	float: right;
+	width: 500px;
+	height: 90px;
+}
+nav a{
+	padding: 10px 15px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 15px;
+}
+nav a:hover{
+	text-decoration: underline;
+	color: #EDFBFD;
+}
+#top-nav ul{
+	width: 450px;
+	height: 90px;
+	position: absolute;
+	top: 0;
+	right: 90px;
+	bottom: 0;
+	margin: 0;
+	list-style: none;
+	line-height: 80px;
+}
+#top-nav ul li{
+	float: right;
+}
+/*============================
+ レイアウト
+=============================*/
+.page-logined >.site-width{
+	width: 980px;
+	margin: 0 auto;
+}
+.site-width{
+	width: 75%;
+	/* width: 1200px; */
+	margin: 0 auto;
+	
+}
+#main{
+	min-height: 600px;
+	float: left;
+}
+section h2.title{
+	font-size: 25px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.page-login  section h2.title{
+	font-size: 25px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.page-1colum #main{
+	width: 100%;
+}
+/*.page-1colum .form-container {
+	/* margin: 80px auto;
+} */
+.page-2colum #main{
+	/* width: 720px; */
+	width: 624px;
+}
+#contents {
+	overflow: hidden;
+	/* margin: 20px auto; */
+  }
+
+  /*お気に入りアイコン*/
+  .icn-like{
+	float:right;
+	color: #ddd;
+	font-size: 30px;
+	position: relative;
+	right: 20px;
+  }
+  .icn-like:hover{
+	cursor: pointer;
+  }
+  .icn-like.active{
+	float:right;
+	color: #fe8a8b;
+  }
+/*=============================
+商品詳細
+=============================*/
+
+.product-page{
+	width: 550px;
+	margin: 0 auto;
+	overflow: hidden;
+	font-family: "Noto Sans JP";
+}
+.contents-top a{
+	text-decoration: none;
+	color:#C5A78F;
+	font-size: 14px;
+}
+.contents-top a:hover{
+	text-decoration: underline;
+	color: #A3CFD9;
+}
+.badge{
+	padding: 4px 10px;
+	background: #4863ad;
+	color: #F2F2F0;
+	border-radius: 3px;
+	font-size: 13px;
+	font-weight: bold;
+	position: relative;
+	top: -2px;
+}
+.product-page p{
+	color: #152340;
+	font-size: 15px;
+	display: inline;
+	margin-left: 10px;
+	font-family: 'Roboto', sans-serif;
+}
+.product-page .title{
+	padding-top: 10px;
+
+}
+.product-img-container{
+	overflow: hidden;
+	text-align: center;
+	margin-top: 5px;
+}
+.product-img-container .img-main{
+	width: 400px;
+	float: left;
+	margin-left: 10px;
+}
+.product-img-container .img-main img{
+	width: 100%;
+	min-height: 400px;
+	object-fit: cover;
+}
+.product-img-container .img-sub{
+	width: 100px;
+	float: left;
+	box-sizing: border-box;
+	margin: 0 20px;
+}
+.product-img-container .img-sub img{
+	width: 100%;
+	min-height: 100px;
+	margin-bottom: 15px;
+	object-fit: cover;
+}
+.product-detail p{
+	font-size: 19px;
+	/* font-weight: bold; */
+	font-family: 'Roboto', sans-serif;
+}
+.product-detail .detail{
+	margin: 5px;
+	padding: 10px;
+	min-height: 100px;
+	background:rgba(235,213,189,0.3);
+	display: block;
+	font-size: 15px;
+	border-radius: 5px;
+}
+.contens-right{
+	text-align: center;
+	margin-bottom: 50px;
+}
+.product-detail input[type="submit"]{
+	width: 200px;
+	margin-top: 10px;
+	padding: 10px 60px;
+	background: #F28F79;
+	color: #ffffff;
+	border: none;
+	border-radius: 25px;
+	font-size: 14px;
+	cursor: pointer;
+	text-align: center;
+}
+/*=============================
+商品編集
+=============================*/
+
+#main select {
+    width: 100%;
+	padding: 10px;
+	/* margin: 10px 0; */
+	border: 1px solid #D9CEC7;
+
+}
+#main select
+
+/*=============================
+マイページ
+=============================*/
+h2.page-title{
+	text-align: center;
+	margin-bottom: 10px;
+}
+h2.name{
+	margin: 15px;
+
+}
+/*=============================
+ボタン
+==============================*/
+.btn {
+	padding: 15px 20px;
+	text-decoration: none;
+	border-radius: 25px;
+	cursor: pointer;
+}
+.btn.btn-primary{
+	background: #A68776;
+}
+.btn.btn-mid{
+	max-width: 150px;
+}
+.btn-wrap{
+	text-align: center;
+	height: auto;
+	
+}
+.btn-wrap a{
+	text-decoration: none;
+    color: #C5A78F;
+	font-size: 14px;
+}
+.btn-wrap a:hover{
+	color: #A3CFD9;
+	text-decoration: underline;
+}
+/*=============================
+ フォーム
+=============================*/
+label{
+	display: block;
+}
+label.err input{
+	background: #f7dcd9;
+}
+.form {
+	width: 280px;
+	/* margin: 0 auto; */
+	padding: 30px;
+	font-size: 14px;
+}
+.form {
+	margin: 0 auto;
+}
+.form-container > .form{
+	margin: 0 auto;
+}
+.form > .area-msg{
+	margin-top: 0;
+	padding: 5px 0 15px 0;
+	font-size: 14px;
+	color: #e83f5f
+}
+.form > a{
+	padding: 0 auto;
+	color: #444;
+	float: right;
+	text-decoration: none;
+}
+.form > a:hover{
+	text-decoration: underline;
+	color: #A3CFD9;
+}
+input[type="text"], input[type="password"], input[type="date"], .form select,
+textarea{
+	width: 100%;
+	height: 40px;
+	margin-bottom: 10px;
+	display: block;
+	box-sizing: border-box;
+	border: 1px solid #D9CEC7;
+}
+input[type="seach"]{
+width: 100%;
+height: 40px;
+display: block;
+box-sizing: border-box;
+border: 1px solid #D9CEC7;
+}
+input[type="checkbox"]{
+	width: 10px;
+	height: 10px;
+}
+input[type="submit"]{
+	width: 100%;
+	background: #F28F79;
+	font-size: 14px;
+	color: #EDFBFD;
+	margin: 10px;
+	padding: 10px 20px;
+	border: none;
+}
+.file-dropcontainer .area-dropcontainer{
+	width: 33.333%;
+	float: left;
+	padding-right: 15px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.area-dropcontainer .area-drop{
+	width: 100%;
+	height: 200px;
+	margin-bottom: 15px;
+	background: #f6f5f4;
+	text-align: center;
+	line-height: 200px;
+	font-size: 12px;
+	position: relative;
+	float: left;
+	
+}
+.form .counter-text{
+	text-align: right;
+	margin-bottom: 5px;
+}
+.area-dropcontainer .area-drop{
+	float: left;
+}
+.area-dropcontainer .input-file{
+	float: left;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	object-fit: cover;
+}
+.area-dropcontainer .prev-img{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.file-dropcontainer{
+	overflow: hidden;
+	width: 100%;
+	margin: ;
+
+}
+.page-profedit
+#main .form-container .area-drop{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%; 
+	background: rgba(217,205,191,0.2);
+	margin-bottom: 15px;
+	text-align: center;
+	line-height: 150px;
+	color: #ccc;
+	position: relative;
+	box-sizing: border-box;
+	line-height: 200px;
+	font-size:12px;
+	margin:0 auto; 
+	position:relative
+}
+.page-profedit
+#main .form-container .area-drop .input-file{
+	opacity: 0;
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2; 
+}
+
+/*============================
+パネル
+============================*/
+.panel-list{
+	overflow: hidden;
+}
+.list > .name{
+	padding-left: -10px;
+	float: left;
+}
+.panel-list > .panel{
+	width: 25%;
+	min-height: 180px;
+	margin-bottom: 15px;
+	margin-top: 10px;
+	padding-left: 15px;
+	float: left;
+	color: #3C4959;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-size: 14px;
+	line-height: 1.2em;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+}
+a.panel:hover{
+	text-decoration: underline;
+	color: #A3CFD9;
+}
+.panel-list > .panel img{
+	width: 100%;
+	border-radius: 50%;
+	vertical-align: bottom;
+
+}
+.panel-body p .name{
+	display: block;
+}
+.age{
+	display: block;
+	font-family: 'Roboto', sans-serif;
+}
+.list > h2.title{
+	font-size: 24px;
+  	border-left: double 16px #7E949A;
+	  border-bottom: 1px solid #ccc;
+	  text-align: left;
+	  margin-bottom: 10px;
+	  margin-left: 10px;
+	  padding: 5px;
+}
+.page-passre .btn-wrap a{
+	color: #8E7467;
+	text-decoration: none;
+	text-align: left;
+}
+.page-passre .form-container a:hover{
+	text-decoration: underline;
+	color: #A3CFD9;
+}
+/*============================
+プロフィール編集
+============================*/
+.page-profedit .form{
+	padding: 0;
+}
+.page-passedit .form{
+	padding: 0;
+}
+.page-passre .form{
+	padding: 0;
+}
+.page-registproduct .form{
+	padding: 0;
+}
+#main .form select .birthday{
+	width: 20%;
+}
+/* ===========================
+商品登録機能
+=============================*/
+.form .label-require{
+	margin-bottom: 5px;
+	background: #F28F79;
+	font-size: 12px;
+	padding: 3px 5px;
+	color: white;
+	border-radius: 3px;
+	vertical-align: bottom;
+}
+.panel-list > .panel .label-require{
+	margin-bottom: 5px;
+	background: #F28F79;
+	font-size: 12px;
+	padding: 3px 5px;
+	color: white;
+	border-radius: 3px;
+	/* vertical-align: bottom; */
+	display: inline-block;
+	text-align: left;
+}
+
+/*============================
+サイドバー
+============================*/
+#sidebar{
+	/* width: 200px; */
+	width: 170px;
+	min-height: 600px;
+	float: left;
+	/* background: ; */
+	padding: 15px;
+	margin-right: 20px;
+}
+#sidebar h1.title{
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 15px;
+	border-bottom: 2px dashed #ffa500;
+}
+#sidebar h1.title:last-child{
+	border-bottom: none;
+}
+#sidebar h2.title{
+	font-size: 14px;
+	text-align: left;
+	margin-bottom: 0;
+}
+#sidebar h1 a{
+	color: #444;
+	text-decoration: none;
+}
+#sidebar a:hover{
+	text-decoration: underline;
+	color: #A3CFD9;
+}
+
+#sidebar select{
+	width: 100%;
+	padding: 10px;
+	margin: 0;
+	border: 1px solid #D9CEC7;
+
+}
+#sidebar input[type="submit"]{
+	margin: 20px 0px;
+	border-radius: 25px;
+	cursor: pointer;
+}
+#sidebar .icn{
+	color: #6D7B8C;
+}
+.page-logined #sidebar{
+	margin-right: 20px;
+	min-height: 200px;
+	background: rgba(217,205,191,0.2);
+	border-radius: 10px;
+}
+.page-logined #sidebar > a{
+	display: block;
+	margin-bottom: 15px;
+	color: #444;
+	font-weight: bold;
+	text-decoration: none;
+	border-bottom: 2px dashed #ffa500;
+	text-align: left;
+}
+/* ==============================
+ 検索エリア
+============================== */
+.search-title {
+	overflow: hidden;
+	margin-bottom: 30px;
+	padding: 5px 10px;
+	height: 30px;
+	border-left: solid 12px #F28F79;;
+	/* background: #f6f5f4; */
+	line-height: 30px;
+	/* border-radius: 10px; */
+	font-family: 'Roboto', sans-serif;
+  }
+  .search-left {
+	float: left;
+  }
+.search-right {
+	float: right;
+  }
+  .search-title .total-num {
+	padding-right: 5px;
+	font-weight: bold;
+	font-size: 18px;
+	/* font-family: 'Montserrat', sans-serif; */
+  }
+
+/* ==============================
+ サイドバーライト
+================================*/
+#sidebar > .right{
+	float: left;
+}
+#sidebar-right > .right{
+	/* width: 200px; */
+	width: 200px;
+	min-height: 600px;
+	float: left;
+	/* background: rgba(217,205,191,0.2); */
+	border-radius: 10px;
+	/* margin: 0 auto; */
+	font-family: 'Roboto', sans-serif;
+
+
+}
+#sidebar-right > .right a{
+	text-decoration: none;
+	color: #081B41;
+	font-size: 14px;
+	line-height: 120%;
+
+}
+#sidebar-right > .right a:hover{
+	text-decoration: underline;
+	color: #A3CFD9;
+}
+
+#sidebar-right h2.title{
+	font-size: 14px;
+	text-align: center;
+	margin-bottom: 10px;
+	background: #FFD25A;
+	padding: 5px;
+
+	border-radius: 10px;
+}
+#sidebar-right > .panel{
+	text-align: center;
+}
+
+#sidebar-right > .panel > .panel-body{
+	margin-bottom: 20px;
+}
+
+#sidebar-right > .panel img{
+	width: 150px;
+	min-height: 150px;
+	border-radius: 50%;
+	vertical-align: bottom;
+	margin-bottom: 5px;
+	object-fit: cover;
+
+
+}
+
+/*============================
+ページネーション
+============================*/
+.pagination {
+	position: relative;
+	overflow: hidden;
+}
+.pagination-list{
+	position: relative;
+	left: 50%;
+	float: left;
+	padding-left: 0;
+	list-style: none;
+}
+.pagination .list-item{
+	position: relative;
+	left: -50%;
+	float: left;
+	margin-right: 5px;
+}
+.pagination .list-item a{
+	color: #F2F2F0;
+	padding: 5px 10px;
+	background: #C5A78F;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 3px;
+}
+.pagination .list-item.active a{
+	background: #8E7467;
+}
+.pagination .list-item a:hover{
+	background: #8E7467;
+}
+/*============================
+テーブルリスト
+============================*/
+.list-table > table{
+	width: 100%;
+	border-spacing: 0 5px;
+}
+.list-table th{
+
+
+}
+.list-table td{
+	padding: 5px 15px;
+	font-size: 14px;
+}
+.list-table > .table{
+	padding-left: 15px;
+}
+.list-table > .table > tbody td{
+	background: #f6f5f4;
+}
+.list-table > .table a{
+	color: #152340;
+}
+.list-table > .table a:hover{
+	text-decoration: underline;
+	color: #A3CFD9;
+}
+/*============================
+連絡掲示板
+============================*/
+.page-logined
+#sidebar .avatar-img{
+	text-align: center;
+}
+.page-logined
+#sidebar .cat-img{
+	text-align: center;
+}
+.page-logined
+#sidebar .avatar-img img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	object-fit: cover;
+}
+.page-logined
+#sidebar .cat-img img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	object-fit: cover;
+
+}
+#sidebar .avatar-info{
+	font-size: 14px;
+	font-family: "Noto Sans JP";
+	padding-bottom: 15px;
+	text-align: center;
+}
+#sidebar .cat-info{
+	font-size: 14px;
+	font-family: "Noto Sans JP";
+	padding-bottom: 15px;
+	text-align: center;
+}
+.page-logined
+#sidebar h2{
+	color: #081B41;
+	text-align: center;
+	background:rgba(160,217,217,0.8);
+	margin-bottom: 10px;
+	border-radius: 3px;
+}
+.msg-info{
+	background: rgba(160,138,166,0.2);
+	padding: 15px;
+	margin-bottom: 15px;
+	/* margin-left: 15px; */
+	border-radius: 10px;
+	overflow: hidden;
+}
+.msg-info .avatar{
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+}
+.msg-info .avatar-info{
+	width: 500px;
+	float: left;
+	padding: left;
+}
+.area-bord{
+	height: 500px;
+	overflow-y: scroll;
+	padding: 15px;
+}
+.area-send-msg{
+	background: rgba(160,138,166,0.2);
+	padding: 15px;
+	overflow: hidden;
+}
+.area-send-msg textarea{
+	width: 100%;
+	height: 100px;
+	background: #ffffff;
+	padding: 15px;
+}
+.area-send-msg .btn-send{
+	width: 150px;
+	float: right;
+	margin-top: 0;
+}
+.area-bord .msg-cnt{
+	width: 80%;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+.area-bord .msg-cnt .avatar{
+	overflow: hidden;
+	float: left;
+}
+.area-bord .msg-cnt .avatar img{
+	float: left;
+	vertical-align: bottom;
+}
+.area-bord .msg-cnt .msg-inrTxt{
+	width: 70%;
+	float: left;
+	padding: 10px;
+	border-radius: 5px;
+	margin: 0 0 0 25px;
+	position: relative;
+	font-size: 14px;
+	font-family: "Noto Sans JP";
+}
+.area-bord .msg-cnt.msg-left .msg-inrTxt{
+	background: rgba(0,63,160,0.2);
+}
+.area-bord .msg-cnt.msg-left .msg-inrTxt > .triangle{
+	width: 0;
+	height: 0;
+	position: absolute;
+	left: -25px;
+	border-top: 10px solid transparent;
+	border-right: 15px solid rgba(0,63,160,0.2);
+	border-left: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+}
+.area-bord .msg-cnt.msg-right{
+	float: right;
+}
+.area-bord .msg-cnt.msg-right .msg-inrTxt{
+	background: rgba(49,145,47,0.3);
+	margin: 0 25px 0 0;
+}
+.area-bord .msg-cnt.msg-right .msg-inrTxt > .triangle{
+	width: 0;
+	height: 0;
+	position: absolute;
+	right: -25px;
+	border-top: 10px solid transparent;
+	border-left: 15px solid rgba(49,145,47,0.3);
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+}
+.area-bord .msg-cnt.msg-right .msg-inrTxt{
+	float: right;
+}
+.area-bord .msg-cnt.msg-right .avatar{
+	float: right;
+}
+.area-bord .msg-cnt.msg-right .avatar img{
+	padding-left: 15px;
+}
+
+/*============================
+ フッター
+============================*/
+footer {
+	width: 100%;
+	padding: 20px 0;
+	background: #011C40;
+	color: #F2F2F0;
+	text-align: center;
+	font-size: 12px;
+}
+footer a{
+	color: #EDFBFD;
+}
+/*===============================
+その他
+===============================*/
+.msg-slide{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 40px;
+	background: rgba(122,206,230, 0.6);
+	text-align: center;
+	font-size: 16px;
+	line-height: 40px;
+}
